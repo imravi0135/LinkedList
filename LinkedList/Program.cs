@@ -20,12 +20,13 @@ namespace LinkedList
         {
             CustomLinkedList customLinkedList = new CustomLinkedList();
             customLinkedList.AddLastNode(56);
+            customLinkedList.AddLastNode(30);
             customLinkedList.AddLastNode(70);
             customLinkedList.DisplayLinkedList();
             Console.WriteLine("-------------------------");
-            customLinkedList.InsertAtParticularPosition(1, 30);
+            int node = customLinkedList.DeleteLastNode();
+            Console.WriteLine("{0} node deleted", node);
             customLinkedList.DisplayLinkedList();
-            Console.ReadKey();
         }
     }
 }
